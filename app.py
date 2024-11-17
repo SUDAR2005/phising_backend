@@ -18,7 +18,7 @@ CORS(app)
 model = load_model('./model_gru.h5')
 
 # Load the tokenizer
-with open('.tokenizer.json', 'r') as file:
+with open('./tokenizer.json', 'r') as file:
     tokenizer_json = file.read()
 tokenizer = tokenizer_from_json(tokenizer_json)
 
